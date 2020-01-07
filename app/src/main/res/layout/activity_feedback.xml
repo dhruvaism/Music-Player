@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:id="@+id/coordinator_feedback"
+    tools:context=".Activity.FeedbackActivity">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="?attr/actionBarSize">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:titleTextColor="@android:color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background_playlist_image"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/addr_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="1"
+            android:background="#fafafa"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:scrollHorizontally="false"
+            android:textColor="@color/colorDark"
+            android:textColorHint="@color/darkgrey"
+            android:hint="your text will be directly forwarded to developer!"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:textColor="#fff"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
