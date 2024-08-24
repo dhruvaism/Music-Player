@@ -28,6 +28,9 @@ jobs:
         with:
           api-level: 30
           build-tools: 30.0.2
+          
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
